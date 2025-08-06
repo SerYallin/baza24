@@ -1,0 +1,78 @@
+@use '@assets/styles/variables' as *;
+
+.button {
+  padding: 6px 24px;
+  color: $color-white;
+  line-height: 24px;
+  background: $gradient-corparate;
+  border-color: $color-main;
+  border-radius: 8px;
+  transition: background 0.9s ease-in-out;
+
+  &:hover {
+    background: $gradient-corparate-hover;
+  }
+
+  &:active {
+    box-shadow: $active-shadow-button;
+  }
+
+  &-primary {
+    background: $gradient-corparate;
+
+    &:hover {
+      color: $color-main;
+      background: $color-white;
+      border-color: $color-main;
+    }
+
+    &:active {
+      background: $color-second-active;
+      box-shadow: $second-active-shadow-button;
+    }
+  }
+
+  &-secondary {
+    color: $color-main;
+    background: $color-white;
+    border-color: $color-main;
+
+    &:hover {
+      color: $color-white;
+      background: $gradient-corparate;
+      border-color: $color-main;
+    }
+
+    &:active {
+      color: $color-second;
+      background: $color-second-active;
+      border-color: $color-second;
+      box-shadow: $second-active-shadow-button;
+    }
+  }
+
+  &-tertiary {
+    color: $color-text;
+    background: $color-light-gray;
+    border-color: $color-light-gray;
+
+    &:hover {
+      color: $color-main;
+      background: $color-white;
+      border-color: $color-main;
+    }
+
+    &:active {
+      color: $color-second;
+      background: $color-second-active;
+      border-color: $color-second;
+      box-shadow: $second-active-shadow-button;
+    }
+
+    &.active {
+      color: $color-white;
+      background: $gradient-corparate;
+      border-color: $color-main;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@use '@assets/styles/variables' as *;
+
+.holder {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  sup {
+    color: $color-red;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid $border-light-gray;
+    border-radius: 6px;
+
+    &:focus {
+      border-color: $color-second;
+      box-shadow: none;
+    }
+
+    &::placeholder {
+      color: $color-grey;
+    }
+  }
+}
+
+.message {
+  color: $color-grey;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.has-error {
+  .message {
+    color: $color-red
+  }
+
+  input {
+    border-color: $color-red;
+  }
+}

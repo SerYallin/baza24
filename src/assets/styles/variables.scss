@@ -1,0 +1,25 @@
+@use "sass:color";
+
+/** Fonts **/
+$base-font: 'SF Pro Display', sans-serif;
+
+/** Colors  **/
+$color-white: #ffffff;
+$color-black: #000000;
+$color-red: #EB5757;
+$color-light-gray: #f2f2f2;
+$color-grey: #9b9b9b;
+$border-light-gray: #f4ebf3;
+$color-main: #f05cb9;
+$color-second: #d66dd6;
+$color-second-active: color.adjust($color-second, $lightness: 30%);
+$gradient-corparate: linear-gradient(to right, $color-main, $color-second);
+$gradient-corparate-hover: linear-gradient(to right, color.adjust($color-main, $lightness: -20%), color.adjust($color-second, $lightness: -20%));
+$active-shadow-button: inset 0 0 2px 2px color.adjust($color-main, $lightness: -30%);
+$second-active-shadow-button: inset 0 0 2px 2px color.adjust($color-main, $lightness: 20%);
+$focus-shadow: 0 0 0 2px $color-black;
+$color-text: #434343;
+
+
+/** common **/
+$section-max-width: 1200px;

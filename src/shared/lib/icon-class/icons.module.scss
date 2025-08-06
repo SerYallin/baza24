@@ -1,0 +1,127 @@
+.icon {
+  position: relative;
+  display: flex;
+  gap: 5px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #ffffff;
+  }
+
+  &-menu {
+    &::before {
+      mask: url("@assets/icons/menu.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-watch {
+    &::before {
+      mask: url("@assets/icons/watch.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-present {
+    &::before {
+      mask: url("@assets/icons/present.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-leaf {
+    &::before {
+      mask: url("@assets/icons/leaf.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-camera {
+    &::before {
+      mask: url("@assets/icons/camera.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-basket {
+    &::before {
+      mask: url("@assets/icons/basket.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-search {
+    &::before {
+      mask: url("@assets/icons/search.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-filter {
+    &::before {
+      mask: url("@assets/icons/filter.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-star {
+    &::before {
+      mask: url("@assets/icons/star.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-card {
+    &::before {
+      mask: url("@assets/icons/card.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-arm {
+    &::before {
+      mask: url("@assets/icons/arm.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-checklist {
+    &::before {
+      mask: url("@assets/icons/checklist.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-lock {
+    &::before {
+      mask: url("@assets/icons/lock.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-phone {
+    &::before {
+      mask: url("@assets/icons/phone.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-telegram {
+    &::before {
+      mask: url("@assets/icons/telegram.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-whatsapp {
+    &::before {
+      mask: url("@assets/icons/whatsapp.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-vk {
+    &::before {
+      mask: url("@assets/icons/vk.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-youtube {
+    &::before {
+      mask: url("@assets/icons/youtube.svg") center center / cover no-repeat;
+    }
+  }
+
+  &-dzen {
+    &::before {
+      mask: url("@assets/icons/dzen.svg") center center / cover no-repeat;
+    }
+  }
+}
