@@ -1,14 +1,11 @@
-/* eslint-disable import/no-cycle */
-import { configureStore, combineReducers, createReducer } from '@reduxjs/toolkit';
+import { configureStore, createReducer } from '@reduxjs/toolkit';
 import {
   TypedUseSelectorHook,
   useDispatch as dispatchHook,
   useSelector as selectorHook,
 } from 'react-redux';
 
-export const rootReducer = createReducer({},() => {
-
-});//combineReducers();
+export const rootReducer = createReducer({}, () => {}); // combineReducers();
 
 export const store = configureStore({
   reducer: rootReducer,

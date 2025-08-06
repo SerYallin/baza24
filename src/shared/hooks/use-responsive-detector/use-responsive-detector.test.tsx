@@ -1,6 +1,5 @@
 import { describe, test, expect } from '@jest/globals';
-import React from 'react';
-import { renderHook, fireEvent, waitFor, act } from '@testing-library/react';
+import { renderHook, waitFor, act } from '@testing-library/react';
 
 import { useResponsiveDetector } from '@app/shared/hooks';
 

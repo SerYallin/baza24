@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { useDebounce } from '@app/shared/hooks';
+import { useDebounce } from '@app/shared/hooks/use-debounce';
 
 export const useResponsiveDetector = () => {
   const [state, setState] = useState({
